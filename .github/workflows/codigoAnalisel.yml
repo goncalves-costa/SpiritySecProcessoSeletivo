@@ -68,3 +68,8 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
+    - name: Veracode Static Analysis Pipeline Scan and SARIF import
+  # You may pin to the exact commit or the version.
+  # uses: veracode/veracode-pipeline-scan-results-to-sarif@0129fdced6c68f7cad91b6cd6594cf9e0d5ab386
+      uses: veracode/veracode-pipeline-scan-results-to-sarif@v1.0.5
+ 
