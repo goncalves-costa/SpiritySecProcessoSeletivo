@@ -17,8 +17,3 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       
-    - name: Fetch Metadata from Dependabot PRs
-    # You may pin to the exact commit or the version.
-    # uses: dependabot/fetch-metadata@4de7a6c08ce727a42e0adbbdc345f761a01240ce
-      uses: dependabot/fetch-metadata@v1.3.6
-    
